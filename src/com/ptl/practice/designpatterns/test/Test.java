@@ -1,8 +1,8 @@
 package com.ptl.practice.designpatterns.test;
 
-import com.ptl.practice.designpatterns.DoubleClockSingleton;
-import com.ptl.practice.designpatterns.EnumTypeSingleton;
-import com.ptl.practice.designpatterns.StaticClassTypeSingleton;
+import com.ptl.practice.designpatterns.singleton.DoubleClockSingleton;
+import com.ptl.practice.designpatterns.singleton.EnumTypeSingleton;
+import com.ptl.practice.designpatterns.singleton.StaticClassTypeSingleton;
 
 /**
  * created by panta on 2019/1/15.

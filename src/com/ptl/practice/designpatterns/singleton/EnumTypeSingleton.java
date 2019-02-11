@@ -1,4 +1,4 @@
-package com.ptl.practice.designpatterns;
+package com.ptl.practice.designpatterns.singleton;
 
 /**
  * created by panta on 2019/1/15.
