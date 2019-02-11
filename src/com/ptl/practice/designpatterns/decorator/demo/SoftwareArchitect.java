@@ -2,7 +2,7 @@ package com.ptl.practice.designpatterns.decorator.demo;
 
 /**
  * created by panta on 2019/2/11.
- *
+ * use the softwareArchitect decoration
  * @author panta
  */
 public class SoftwareArchitect extends AbstractDecorator {

@@ -2,7 +2,7 @@ package com.ptl.practice.designpatterns.decorator.demo;
 
 /**
  * created by panta on 2019/2/11.
- *
+ * Tom is a programmer
  * @author panta
  */
 public class Tom implements Programmer {

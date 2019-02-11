@@ -12,7 +12,7 @@ public class Adapter  implements Target{
 
     private Source source;
 
-    public void setSource(Source source) {
+    public Adapter(Source source) {
         this.source = source;
     }
 
@@ -23,12 +23,9 @@ public class Adapter  implements Target{
     }
 
     public static void main(String[] args) {
-        Adapter adapter = new Adapter();
-        Source1 source = new Source1();
-        adapter.setSource(source);
+        Target adapter = new Adapter(new Source1());
         adapter.print();
-        Source2 source2 = new Source2();
-        adapter.setSource(source2);
-        adapter.print();
+        Target adapter1 = new Adapter(new Source1());
+        adapter1.print();
     }
 }
