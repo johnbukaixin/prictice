@@ -8,8 +8,8 @@ package com.ptl.practice.designpatterns.builder;
 public class Client {
 
     public static void main(String[] args) {
-        People peopleBuilder = new PeopleBuilder(new People()).setAge(23).setHeight(158).setWeight(100).setName("张三").build();
+        People people = new PeopleBuilder(new People()).setAge(23).setHeight(158).setWeight(100).setName("Tom").build();
 
-        System.out.println("people = [" + peopleBuilder.getName() + "]");
+        System.out.println("people = [" + people.getName() + "]");
     }
 }
