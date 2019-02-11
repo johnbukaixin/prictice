@@ -2,7 +2,7 @@ package com.ptl.practice.designpatterns.adapter.method1.method2;
 
 /**
  * created by panta on 2019/2/11.
- *
+ * 对象适配器模式
  * @author panta
  */
 public class Adapter  implements Target{
