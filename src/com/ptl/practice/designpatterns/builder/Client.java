@@ -2,7 +2,7 @@ package com.ptl.practice.designpatterns.builder;
 
 /**
  * created by panta on 2019/2/11.
- *
+ * Spring BeanDefinitionBuilder
  * @author panta
  */
 public class Client {
