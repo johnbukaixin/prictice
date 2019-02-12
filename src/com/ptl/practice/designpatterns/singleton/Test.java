@@ -1,4 +1,4 @@
-package com.ptl.practice.designpatterns.test;
+package com.ptl.practice.designpatterns.singleton;
 
 import com.ptl.practice.designpatterns.singleton.DoubleClockSingleton;
 import com.ptl.practice.designpatterns.singleton.EnumTypeSingleton;
