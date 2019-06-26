@@ -1,7 +1,5 @@
 package com.ptl.practice.designpatterns.builder;
 
-import com.ptl.practice.designpatterns.builder.People;
-
 public class PeopleBuilder {
     private People people;
     public PeopleBuilder setName(String name){
