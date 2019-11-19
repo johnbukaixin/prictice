@@ -9,9 +9,8 @@ import java.util.List;
  * @author panta
  */
 public interface AmountCalculator {
-    List<AmountCalculator> amountCalculators = new ArrayList<>();
-    
+
     boolean isSupport();
 
-    Integer calculator();
+    Integer calculator(Integer a, RuleChain chain);
 }
