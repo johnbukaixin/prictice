@@ -1,25 +1,24 @@
 package com.ptl.practice.abs.calculator;
 
 /**
- * create by panta on 2019/11/19
+ * created by panta on 2019/11/20.
+ *
+ * @author panta
  */
-
-public class CouponCalculator extends AmountCalculatorBase {
+public class IntegralCalculator extends AmountCalculatorBase {
     @Override
     public boolean isSupport(Integer a) {
-        return a % 2 == 0;
+        return a % 2 == 1;
     }
 
     @Override
     public Integer calculator(Integer a, CalculatorChain chain) {
         if (isSupport(a)) {
-            System.out.println("aaaaaaaaaaaaaaa" +a);
+            System.out.println("bbbbbbb" +a);
             return a;
         } else {
             return chain.doHandler(a);
 
         }
     }
-
-
 }

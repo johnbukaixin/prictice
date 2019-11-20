@@ -1,8 +1,5 @@
 package com.ptl.practice.abs.calculator;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * created by panta on 2019/11/19.
  *
@@ -10,7 +7,7 @@ import java.util.List;
  */
 public interface AmountCalculator {
 
-    boolean isSupport();
+    boolean isSupport(Integer a);
 
-    Integer calculator(Integer a, RuleChain chain);
+    Integer calculator(Integer a, CalculatorChain chain);
 }

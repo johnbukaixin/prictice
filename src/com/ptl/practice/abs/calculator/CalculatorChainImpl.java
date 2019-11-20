@@ -6,12 +6,12 @@ import java.util.List;
 /**
  * create by panta on 2019/11/19
  */
-public class RuleChainImpl implements RuleChain {
+public class CalculatorChainImpl implements CalculatorChain {
 
     private Iterator<AmountCalculator> iterators;
 
 
-    public RuleChainImpl(List<AmountCalculator> calculators) {
+    public CalculatorChainImpl(List<AmountCalculator> calculators) {
         this.iterators = calculators.iterator();
     }
 

@@ -1,11 +1,7 @@
 package com.ptl.practice.abs.calculator;
 
-import com.ptl.practice.abs.a.Customer;
-import com.ptl.practice.abs.a.HandlerChainFactory;
-
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 /**
  * created by panta on 2019/11/19.
@@ -14,24 +10,24 @@ import java.util.Random;
  */
 public class OrderCalculatorClient {
 
-    private RuleChain ruleChain;
+    private CalculatorChain calculatorChain;
 
     private void request(Integer amount){
-        ruleChain.doHandler(amount);
+        calculatorChain.doHandler(amount);
     }
 
 
-    public void setRuleChain(RuleChain ruleChain) {
-        this.ruleChain = ruleChain;
+    public void setRuleChain(CalculatorChain ruleChain) {
+        this.calculatorChain = ruleChain;
     }
 
     public static void main(String[] args) {
-        Random random = new Random();
         for (int i = 0; i < 10; i++) {
             OrderCalculatorClient customer = new OrderCalculatorClient();
             List<AmountCalculator> calculators = new ArrayList<>();
             calculators.add(new CouponCalculator());
-            customer.setRuleChain(new RuleChainImpl(calculators));
+            calculators.add(new IntegralCalculator());
+            customer.setRuleChain(new CalculatorChainImpl(calculators));
             customer.request(i);
         }
     }
